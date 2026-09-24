@@ -1,32 +1,119 @@
-🍷 Wine Quality Analysis | Power BI
+# 🍷 Wine Quality Analysis — Power BI
 
-I recently built an interactive Wine Quality Analysis dashboard in Power BI to explore the factors associated with wine quality.
+An interactive Power BI dashboard designed to analyze wine quality and explore the relationship between quality scores and different chemical characteristics.
 
-Instead of just creating charts, I focused on turning the dataset into an analytical dashboard that can quickly answer questions such as:
+The project combines data cleaning, transformation, DAX calculations, data visualization, and dashboard design to turn raw wine-quality data into an interactive analytical report.
 
-• How is wine quality distributed?
-• How does alcohol level vary across quality scores?
-• How do sulfur dioxide and residual sugar change with quality?
-• What chemical characteristics are associated with different quality levels?
+---
 
-Dashboard Highlights:
-• 4,898 total wine records
-• Average quality: 5.88
-• 1,060 high-quality wines (Quality ≥ 7)
-• High-quality wines: 21.64%
-• Average alcohol: 10.50%
+## Dashboard Preview
 
-Tools & Skills:
-• Power BI
-• Power Query
-• DAX
-• Data Cleaning & Transformation
-• Data Visualization
-• Interactive Slicers
-• Business-focused Dashboard Design
+![Wine Quality Analysis Dashboard](dashboard.png)
 
-I also focused on the visual design using a wine-inspired theme to make the dashboard clean, readable, and engaging.
+---
 
-This project helped me strengthen both my technical Power BI skills and my ability to communicate data insights visually.
+## Project Objective
 
-#PowerBI #DataAnalytics #DataAnalyst #PowerQuery #DAX #DataVisualization #BusinessIntelligence #Analytics #PortfolioProject
+The objective of this project is to analyze wine-quality data and identify patterns across different chemical characteristics.
+
+The dashboard was designed to answer questions such as:
+
+- How are wine quality scores distributed?
+- How does alcohol level vary across quality scores?
+- How does total sulfur dioxide change with wine quality?
+- How does residual sugar vary across quality levels?
+- What are the average chemical characteristics for each quality score?
+- How does alcohol relate to wine quality?
+
+---
+
+## Key Metrics
+
+| KPI | Value |
+|---|---:|
+| Total Wines | 4,898 |
+| Average Quality | 5.88 |
+| High Quality Wines | 1,060 |
+| High Quality % | 21.64% |
+| Average Alcohol | 10.50 |
+
+> High-quality wines are defined as wines with a quality score of **7 or higher**.
+
+---
+
+## 📈 Dashboard Features
+
+### 1. Wine Quality Distribution
+
+Shows the distribution of wines across different quality scores.
+
+### 2. Average Alcohol by Quality
+
+Compares average alcohol levels across different wine-quality scores.
+
+### 3. Alcohol vs Quality
+
+A scatter visualization showing the relationship between alcohol level and wine quality.
+
+### 4. Average Total Sulfur Dioxide by Quality
+
+Shows how average total sulfur dioxide varies across quality levels.
+
+### 5. Average Residual Sugar by Quality
+
+Visualizes the average residual sugar associated with each quality score.
+
+### 6. Chemical Characteristics
+
+A summary table containing average chemical characteristics by quality score, including:
+
+- Alcohol
+- Sugar
+- pH
+- Chlorides
+
+### 7. Interactive Filters
+
+The dashboard includes interactive filters for:
+
+- Wine Quality
+- Alcohol Range
+
+These allow users to explore specific segments of the dataset.
+
+---
+
+## Tools & Technologies
+
+- **Power BI** — Dashboard development and visualization
+- **Power Query** — Data cleaning and transformation
+- **DAX** — KPI and analytical calculations
+- **Excel** — Source data preparation
+- **Figma** — Dashboard visual design and supporting visual elements
+
+---
+
+## Data Preparation
+
+The dataset was prepared before visualization to make it suitable for analysis.
+
+The workflow included:
+
+1. Importing the wine-quality dataset
+2. Reviewing data types
+3. Cleaning and transforming the data
+4. Preparing fields for analysis
+5. Creating calculated measures using DAX
+6. Building relationships between analytical components
+7. Designing interactive Power BI visuals
+8. Applying a consistent wine-inspired visual theme
+
+---
+
+## Key DAX Measures
+
+### Total Wines
+
+```DAX
+Total Quantity =
+COUNTROWS('winequality-white new')
