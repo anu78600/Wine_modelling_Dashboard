@@ -8,7 +8,9 @@ The project combines data cleaning, transformation, DAX calculations, data visua
 
 ## Dashboard Preview
 
-![Wine_modelling_Dashboard](https://github.com/anu78600/Wine_modelling_Dashboard/blob/main/wine-quality-dashboard.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/anu78600/Wine_modelling_Dashboard/main/wine-quality-dashboard.png" width="800">
+</p>
 
 ---
 
