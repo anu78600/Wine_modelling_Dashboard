@@ -8,7 +8,7 @@ The project combines data cleaning, transformation, DAX calculations, data visua
 
 ## Dashboard Preview
 
-![Wine Quality Analysis Dashboard](Screenshot 2026-09-24 180333.png)
+![Wine_modelling_Dashboard](Screenshot 2026-09-24 180333.png)
 
 ---
 
